@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/stylesheet.css">
-    <link rel="icon" href="img/favicon.ico" type="image">
-
-    
-    <title>PROTester</title>
+    <link rel="stylesheet" href="../css/fonts.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <title>Registration</title>
 </head>
-
 <body class="dark">
     <header class="container p-2">
         <div class="container">
@@ -35,9 +33,32 @@
         </div>
     </header>
 
-    <main class="container">
-        <h1 class="col-lg-auto col-12">Добро пожаловать на сайти протестер!!!</h1>
-        <p class="p-2 col-lg-auto col-12">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque itaque fugit quibusdam natus quod mollitia expedita provident alias? Libero laudantium deleniti aliquid assumenda odit pariatur voluptas necessitatibus aliquam animi alias reiciendis quos rerum iste expedita fugit enim repellat soluta totam numquam nesciunt, corporis vel ad nisi! Minima sit tempora vel eveniet obcaecati officia a iusto tenetur. Rerum minima, magni dolor enim consequuntur numquam voluptate nobis ratione illo in atque, neque, non provident doloribus eos ipsam facilis sint id at eligendi laudantium nam repellendus. Ducimus quod omnis neque quia ipsam numquam, nam, provident delectus, dolore obcaecati rem nobis eius natus eaque?</p>
+    <main class="container register-form">
+        <div class="form-container d-flex justify-content-center align-items-center">
+            <form>
+                <div class="mb-3">
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail">
+                </div>
+                <div class="mb-3">
+                    <label for="inputName" class="form-label">Ваше имя</label>
+                    <input type="email" class="form-control" id="inputName">
+                </div>
+                <div class="mb-3">
+                    <label for="inputPassword" class="form-label">Пароль</label>
+                    <input type="password" class="form-control" id="inputPassword">
+                </div>
+                <div class="mb-3">
+                    <label for="confirmPassword" class="form-label">Подтвердите пароль</label>
+                    <input type="password" class="form-control" id="confirmPassword">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
+                </div>
+                <button type="submit" class="btn form-btn">Зарегестрироваться</button>
+            </form>
+        </div>
 
     </main>
 
@@ -88,6 +109,5 @@
     </footer>
 
     <script src="../js/bootstrap.bundle.min.js"></script>
-
-  </body>
+</body>
 </html>

@@ -138,7 +138,7 @@ nav {
 .cards > div {
     width: 20rem;
     height: 30rem;
-    background-color: var(--div-outline-border);
+    background-color: var(--div-outline-dark);
 }
 
 .cards > div > img {
@@ -147,7 +147,7 @@ nav {
 }
 
 .card-btn {
-    background-color: var(--div-outline-dark);
+    background-color: var(--bg-dark);
     color: var(--h1-dark);
 }
 
@@ -156,3 +156,38 @@ nav {
     opacity: 5;
 }
 
+
+.register-form {
+    height: 50vh;
+    
+}
+.form-container {
+    height: 100%;
+    width: 100%;  
+}
+
+.form-container>form {
+    width: 50vh;  
+}
+
+.form-label {
+    color: var(--h1-dark);
+}
+
+.form-text {
+    color: var(--navbar-text-dark);
+}
+
+.form-check-label {
+    color: var(--navbar-text-dark);
+}
+
+.form-btn {
+    background-color: var(--navbar-text-dark);
+    color: var(--h1-light);
+}
+
+.form-btn:hover {
+    background-color: var(--h1-dark);
+    opacity: 5;
+}

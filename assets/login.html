@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/fonts.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/stylesheet.css">
     <title>Login</title>
 </head>
@@ -34,16 +39,16 @@
         <div class="form-container d-flex justify-content-center align-items-center">
             <form>
                 <div class="mb-3">
-                    <label for="inputEmail" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="inputEmail">
+                    <input type="email" class="custom-input" id="inputEmail" placeholder="email">
                 </div>
                 <div class="mb-3">
-                    <label for="inputPassword" class="form-label">Пароль</label>
-                    <input type="password" class="form-control" id="inputPassword">
+                    <input type="password" class="custom-input" placeholder="пароль">
                 </div>
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
+                <div class="mb-3 checkbox-question-container">
+                  <label class="w-100"> 
+                    <input type="checkbox">
+                    <span class="justify-content-lg-start">Запомнить меня</span>
+                  </label>
                 </div>
                 <button type="submit" class="btn form-btn">Войти</button>
             </form>

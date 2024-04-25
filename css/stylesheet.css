@@ -17,20 +17,21 @@
     --navbar-text-dark: #CCC5B9;
 
     
-    --font-family: "Roboto", sans-serif;
+    /* --font-family: "Roboto", sans-serif; */
     --second-family: "Arial Rounded MT Bold", sans-serif;
     --third-family: "Inter", sans-serif;
 }
 
-html {
-    font-family: var(--second-family);
-}
+/* html {
+    font-family: var(--);
+} */
 
 body {
     min-height: 100vh;
     background-color: var(--bg-light);
     display: flex;
     flex-direction: column;
+    font-family: var(--font-family) !important;
 }
 .dark {
     background-color: var(--bg-dark);
@@ -164,6 +165,7 @@ nav {
 .form-container {
     height: 100%;
     width: 100%;  
+    color: var(--dark-text);
 }
 
 .form-container>form {
@@ -190,4 +192,16 @@ nav {
 .form-btn:hover {
     background-color: var(--h1-dark);
     opacity: 5;
+}
+
+.custom-input {
+    background-color: var(--dark-text);
+    color: var(--dark-bg-lighten);
+    font-size: 2rem !important;
+    outline: none;
+    text-transform: uppercase;
+    padding: 1rem;
+    border: none;
+    width: clamp(300px, 80%, 600px);
+    border-radius: var(--border-radius);
 }

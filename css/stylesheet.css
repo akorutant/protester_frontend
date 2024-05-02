@@ -22,16 +22,13 @@
     --third-family: "Inter", sans-serif;
 }
 
-/* html {
-    font-family: var(--);
-} */
-
 body {
     min-height: 100vh;
     background-color: var(--bg-light);
     display: flex;
     flex-direction: column;
     font-family: var(--font-family) !important;
+    font-size: 3rem;
 }
 .dark {
     background-color: var(--bg-dark);
@@ -61,6 +58,7 @@ h4 {
 }
 
 h5 {
+    font-size: 3rem;
     color: var(--h1-dark);
 }
 
@@ -148,12 +146,13 @@ nav {
 }
 
 .card-btn {
-    background-color: var(--bg-dark);
-    color: var(--h1-dark);
+    background-color: var(--navbar-text-dark);
+    color: var(--h1-light);
+    font-size: 2rem !important;
 }
 
 .card-btn:hover {
-    background-color: var(--nav-light);
+    background-color: var(--dark-focus-outline);
     opacity: 5;
 }
 
@@ -185,12 +184,15 @@ nav {
 }
 
 .form-btn {
+    width: 15rem;
+    height: 4rem;
     background-color: var(--navbar-text-dark);
     color: var(--h1-light);
+    font-size: 2rem !important;
 }
 
 .form-btn:hover {
-    background-color: var(--h1-dark);
+    background-color: var(--dark-focus-outline);
     opacity: 5;
 }
 
@@ -203,5 +205,17 @@ nav {
     padding: 1rem;
     border: none;
     width: clamp(300px, 80%, 600px);
+    border-radius: var(--border-radius);
+}
+
+.custom-search {
+    background-color: var(--dark-text);
+    color: var(--dark-bg-lighten);
+    font-size: 1.5rem !important;
+    outline: none;
+    text-transform: uppercase;
+    padding: 1rem;
+    border: none;
+    width: clamp(200px, 80%, 600px);
     border-radius: var(--border-radius);
 }

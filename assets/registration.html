@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/fonts.css" />
+    <link rel="stylesheet" href="../css/base.css" />
     <link rel="stylesheet" href="../css/components.css" />
-    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/stylesheet.css">
     <title>Registration</title>
 </head>
 <body class="dark">
     <header class="container p-2">
         <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="#" class="text-decoration-none align-items-center mb-2 mb-lg-0 fs-2 fw-bold" style="color: white;">
+            <a href="#" class="text-decoration-none align-items-center mb-2 mb-lg-0 fw-bold" style="color: white; font-size: 4rem;">
                 PROTester
             </a>
         
@@ -25,7 +27,7 @@
             </ul>
         
             <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-                <input type="search" class="form-control" placeholder="Поиск...">
+                <input type="search" class="form-control custom-search" placeholder="Поиск...">
             </form>
 
             <a class="profile-link" href="#"><img class="img-link" src="../img/default.png" alt="user image"></a>        
@@ -37,24 +39,16 @@
         <div class="form-container d-flex justify-content-center align-items-center">
             <form>
                 <div class="mb-3">
-                    <label for="inputEmail" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="inputEmail">
+                    <input type="email" class="custom-input" placeholder="email">
                 </div>
                 <div class="mb-3">
-                    <label for="inputName" class="form-label">Ваше имя</label>
-                    <input type="email" class="form-control" id="inputName">
+                    <input type="email" class="custom-input" placeholder="имя">
                 </div>
                 <div class="mb-3">
-                    <label for="inputPassword" class="form-label">Пароль</label>
-                    <input type="password" class="form-control" id="inputPassword">
+                    <input type="password" class="custom-input" placeholder="пароль">
                 </div>
                 <div class="mb-3">
-                    <label for="confirmPassword" class="form-label">Подтвердите пароль</label>
-                    <input type="password" class="form-control" id="confirmPassword">
-                </div>
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
+                    <input type="password" class="custom-input" placeholder="подтвеердите пароль">
                 </div>
                 <button type="submit" class="btn form-btn">Зарегестрироваться</button>
             </form>
@@ -75,7 +69,7 @@
       
           <div class="col mb-3">
             <h5>Section</h5>
-            <ul class="nav flex-column">
+            <ul class="nav flex-column fs-2">
               <li class="nav-item mb-2"><a href="#" class="custom-link nav-link p-0">Home</a></li>
               <li class="nav-item mb-2"><a href="#" class="custom-link nav-link p-0">Features</a></li>
               <li class="nav-item mb-2"><a href="#" class="custom-link nav-link p-0">Pricing</a></li>
@@ -86,7 +80,7 @@
       
           <div class="col mb-3">
             <h5>Section</h5>
-            <ul class="nav flex-column">
+            <ul class="nav flex-column fs-2">
               <li class="nav-item mb-2"><a href="#" class="custom-link nav-link p-0">Home</a></li>
               <li class="nav-item mb-2"><a href="#" class="custom-link nav-link p-0">Features</a></li>
               <li class="nav-item mb-2"><a href="#" class="custom-link nav-link p-0">Pricing</a></li>
@@ -97,7 +91,7 @@
       
           <div class="col mb-3">
             <h5>Section</h5>
-            <ul class="nav flex-column">
+            <ul class="nav flex-column fs-2">
               <li class="nav-item mb-2"><a href="#" class="custom-link nav-link p-0">Home</a></li>
               <li class="nav-item mb-2"><a href="#" class="custom-link nav-link p-0">Features</a></li>
               <li class="nav-item mb-2"><a href="#" class="custom-link nav-link p-0">Pricing</a></li>

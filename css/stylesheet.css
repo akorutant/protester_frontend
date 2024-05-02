@@ -135,8 +135,7 @@ nav {
 }
 
 .cards > div {
-    width: 20rem;
-    height: 30rem;
+    width: 30rem;
     background-color: var(--div-outline-dark);
 }
 
@@ -156,7 +155,6 @@ nav {
     opacity: 5;
 }
 
-
 .register-form {
     height: 50vh;
     
@@ -167,7 +165,7 @@ nav {
     color: var(--dark-text);
 }
 
-.form-container>form {
+.form-container > form {
     width: 50vh;  
 }
 
@@ -184,7 +182,7 @@ nav {
 }
 
 .form-btn {
-    width: 15rem;
+    /* width: 15rem; */
     height: 4rem;
     background-color: var(--navbar-text-dark);
     color: var(--h1-light);
@@ -204,7 +202,7 @@ nav {
     text-transform: uppercase;
     padding: 1rem;
     border: none;
-    width: clamp(300px, 80%, 600px);
+    /* width: clamp(300px, 80%, 600px); */
     border-radius: var(--border-radius);
 }
 

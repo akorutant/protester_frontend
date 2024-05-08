@@ -131,17 +131,16 @@ nav {
     display: flex;
     align-content: center;
     justify-content: space-between;
-    padding-top: 5rem;
 }
 
 .cards > div {
     width: 30rem;
     background-color: var(--div-outline-dark);
+    
 }
 
 .cards > div > img {
     width: 20rem;
-    height: 20rem;
 }
 
 .card-btn {
@@ -151,8 +150,13 @@ nav {
 }
 
 .card-btn:hover {
+    color: var(--h1-dark);
     background-color: var(--dark-focus-outline);
     opacity: 5;
+}
+
+.card-btn:active {
+    color: var(--h1-dark) !important;
 }
 
 .register-form {
@@ -216,4 +220,33 @@ nav {
     border: none;
     width: clamp(200px, 80%, 600px);
     border-radius: var(--border-radius);
+}
+
+
+.overlay {
+    position: absolute;
+    background-color: var(--h1-light);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1E1E1E00;
+}
+
+.overlay > a {
+    opacity: 0;
+}
+
+.card:hover .overlay {
+    background-color: #1E1E1EAA;
+    
+}
+
+.card:hover .overlay > a {
+    opacity: 1;
 }

@@ -14,93 +14,82 @@
 </head>
 <body class="dark">
     <header class="container p-2">
-        <div class="container">
-            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="#" class="text-decoration-none align-items-center mb-2 mb-lg-0 fw-bold" style="color: white; font-size: 4rem;">
+            <div class="d-flex flex-wrap align-items-center justify-content-between">
+            <a href="#" class="text-decoration-none align-items-center mb-2 mb-lg-0 fw-bold me-3" style="color: white;">
                 PROTester
             </a>
         
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <ul class="nav justify-content-center align-items-center">
                 <li><a href="#" class="custom-link nav-link nav-a ">Тесты</a></li>
                 <li><a href="#" class="custom-link nav-link nav-a ">Каталог</a></li>
                 <li><a href="#" class="custom-link nav-link nav-a ">Текущие викторины</a></li>
             </ul>
-        
-            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-                <input type="search" class="form-control custom-search" placeholder="Поиск...">
-            </form>
+            
+              <div class="d-flex align-items-center">
+              <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                  <input type="search" class="form-control custom-search" placeholder="Поиск...">
+              </form>
 
-            <a class="profile-link" href="#"><img class="img-link" src="../img/default.png" alt="user image"></a>        
+              <a class="profile-link" href="#"><img class="img-link" src="../img/default.png" alt="user image"></a>        
+              </div>
             </div>
-        </div>
     </header>
 
     <main class="container register-form">
-        <div class="form-container d-flex justify-content-center align-items-center">
-            <form>
-                <div class="mb-3">
-                    <input type="email" class="custom-input" id="inputEmail" placeholder="email">
-                </div>
-                <div class="mb-3">
-                    <input type="password" class="custom-input" placeholder="пароль">
-                </div>
-                <div class="mb-3 checkbox-question-container">
-                  <label class="w-100"> 
-                    <input type="checkbox">
-                    <span class="justify-content-lg-start">Запомнить меня</span>
-                  </label>
-                </div>
-                <button type="submit" class="btn form-btn">Войти</button>
-            </form>
+      <div class="form-container d-flex justify-content-center align-items-center">
+          <form>
+              <div class="mb-3">
+                  <h1 class="fw-bold text-center my-4" style="font-size: 4rem;">Вход</h1>
+                  <div class="d-grid gap-2">
+                      <input type="email" class="custom-input mb-3" placeholder="email">
+                      <input type="text" class="custom-input mb-3" placeholder="имя">
+                      <input type="password" class="custom-input mb-3" placeholder="пароль">
+                      <button type="submit" class="btn form-btn">Войти</button>
+                  </div>
+              </div>
+          </form>
+      </div>
+
+  </main>
+
+  <footer class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 border-top">
+        <div class="col">
+            <p style="color: white;">© 2024</p>
         </div>
-
-    </main>
-
-    <footer class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-                      <div class="col mb-3">
-
-            <p class="text-body-secondary">© 2024</p>
-          </div>
-      
-          <div class="col mb-3">
+          <div class="col">
       
           </div>
       
-          <div class="col mb-3">
+          <div class="col">
             <h5>Section</h5>
             <ul class="nav flex-column fs-2">
               <li class="nav-item mb-2"><a href="#" class="custom-link nav-link p-0">Home</a></li>
               <li class="nav-item mb-2"><a href="#" class="custom-link nav-link p-0">Features</a></li>
               <li class="nav-item mb-2"><a href="#" class="custom-link nav-link p-0">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="custom-link nav-link p-0">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="custom-link nav-link p-0">About</a></li>
             </ul>
           </div>
       
-          <div class="col mb-3">
+          <div class="col">
             <h5>Section</h5>
             <ul class="nav flex-column fs-2">
               <li class="nav-item mb-2"><a href="#" class="custom-link nav-link p-0">Home</a></li>
               <li class="nav-item mb-2"><a href="#" class="custom-link nav-link p-0">Features</a></li>
               <li class="nav-item mb-2"><a href="#" class="custom-link nav-link p-0">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="custom-link nav-link p-0">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="custom-link nav-link p-0">About</a></li>
             </ul>
           </div>
       
-          <div class="col mb-3">
+          <div class="col">
             <h5>Section</h5>
             <ul class="nav flex-column fs-2">
               <li class="nav-item mb-2"><a href="#" class="custom-link nav-link p-0">Home</a></li>
               <li class="nav-item mb-2"><a href="#" class="custom-link nav-link p-0">Features</a></li>
               <li class="nav-item mb-2"><a href="#" class="custom-link nav-link p-0">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="custom-link nav-link p-0">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="custom-link nav-link p-0">About</a></li>
             </ul>
           </div>
         </div>
-    </footer>
+  </footer>
+
 
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>

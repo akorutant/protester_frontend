@@ -243,7 +243,8 @@ nav {
 }
 
 .card:hover .overlay {
-    background-color: #1E1E1EAA;
+    background-color: #1E1E1ECF;
+    transform: scale(1.1);
     
 }
 

@@ -16,6 +16,9 @@
 
     --navbar-text-dark: #CCC5B9;
 
+    --search-background: #69696900;
+    --search-background-focus: #69696955;
+
     
     /* --font-family: "Roboto", sans-serif; */
     --second-family: "Arial Rounded MT Bold", sans-serif;
@@ -136,7 +139,6 @@ nav {
 .cards > div {
     width: 30rem;
     background-color: var(--div-outline-dark);
-    
 }
 
 .cards > div > img {
@@ -205,21 +207,30 @@ nav {
     outline: none;
     text-transform: uppercase;
     padding: 1rem;
-    border: none;
-    /* width: clamp(300px, 80%, 600px); */
+    /* border: none; */
     border-radius: var(--border-radius);
 }
 
+.custom-input:focus {
+    border: 2px solid;
+    border-color: var(--dark-focus-outline);
+}
+
+
 .custom-search {
-    background-color: var(--dark-text);
-    color: var(--dark-bg-lighten);
-    font-size: 1.5rem !important;
-    outline: none;
-    text-transform: uppercase;
-    padding: 1rem;
-    border: none;
-    width: clamp(200px, 80%, 600px);
+    background-color: var(--search-background);
+    color: var(--dark-text);
+    font-size: 2rem;
+    padding: 0.5rem;
+    border: 2px solid var(--div-outline-border);
     border-radius: var(--border-radius);
+    outline: none;
+    min-width: 20rem;
+    margin: 0 5px;
+}
+
+.custom-search:focus {
+    background-color: var(--search-background-focus);
 }
 
 
@@ -236,6 +247,7 @@ nav {
     align-items: center;
     justify-content: center;
     background-color: #1E1E1E00;
+    border-radius: 3px;
 }
 
 .overlay > a {
@@ -244,10 +256,22 @@ nav {
 
 .card:hover .overlay {
     background-color: #1E1E1ECF;
-    transform: scale(1.1);
+    transform: scale(1.05);
     
 }
 
 .card:hover .overlay > a {
     opacity: 1;
+}
+
+.svg-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.svg-image {
+    /* width: 50px; */
+    height: 2rem;
+    margin-right: 5px;
 }

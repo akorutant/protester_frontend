@@ -18,6 +18,7 @@
 
     --search-background: #69696900;
     --search-background-focus: #69696955;
+    --search-border-color: #4a4a4a;
 
     
     /* --font-family: "Roboto", sans-serif; */
@@ -222,7 +223,7 @@ nav {
     color: var(--dark-text);
     font-size: 2rem;
     padding: 0.5rem;
-    border: 2px solid var(--div-outline-border);
+    border: 2px solid var(--search-border-color);
     border-radius: var(--border-radius);
     outline: none;
     min-width: 20rem;
@@ -231,8 +232,8 @@ nav {
 
 .custom-search:focus {
     background-color: var(--search-background-focus);
+    border-color: var(--div-outline-border);
 }
-
 
 .overlay {
     position: absolute;

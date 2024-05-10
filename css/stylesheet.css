@@ -140,10 +140,11 @@ nav {
 .cards > div {
     width: 30rem;
     background-color: var(--div-outline-dark);
+    border-radius: 10px;
 }
 
 .cards > div > img {
-    width: 20rem;
+    border-radius: 10px;
 }
 
 .card-btn {
@@ -206,9 +207,8 @@ nav {
     color: var(--dark-bg-lighten);
     font-size: 2rem !important;
     outline: none;
-    text-transform: uppercase;
     padding: 1rem;
-    /* border: none; */
+    border: none;
     border-radius: var(--border-radius);
 }
 
@@ -226,7 +226,7 @@ nav {
     border: 2px solid var(--search-border-color);
     border-radius: var(--border-radius);
     outline: none;
-    min-width: 20rem;
+    min-width: 1rem;
     margin: 0 5px;
 }
 
@@ -248,7 +248,7 @@ nav {
     align-items: center;
     justify-content: center;
     background-color: #1E1E1E00;
-    border-radius: 3px;
+    border-radius: 10px;
 }
 
 .overlay > a {
@@ -256,13 +256,8 @@ nav {
 }
 
 .card:hover .overlay {
-<<<<<<< HEAD
     background-color: #1E1E1Ecf;
-=======
-    background-color: #1E1E1ECF;
     transform: scale(1.05);
->>>>>>> 00be24b9781695345f0642b11481858bfd6f7e5d
-    
 }
 
 .card:hover .overlay > a {
@@ -279,4 +274,28 @@ nav {
     /* width: 50px; */
     height: 2rem;
     margin-right: 5px;
+}
+
+.search-icon {
+    
+}
+
+.profile-card {
+    background-color: var(--div-outline-dark);
+    border-radius: 10px;
+}
+
+.completed-tests {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 50%;
+}
+
+.profile-info {
+    background-color: var(--div-outline-border);
+    border-radius: 10px;
 }

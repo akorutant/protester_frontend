@@ -157,7 +157,6 @@ nav {
 .card-btn:hover {
     color: var(--h1-dark);
     background-color: var(--dark-focus-outline);
-    opacity: 5;
 }
 
 .card-btn:active {
@@ -286,6 +285,8 @@ nav {
     border-radius: 10px;
     align-self: flex-start;
     position: sticky;
+    position: -webkit-sticky;
+    top: 0; 
 }
 
 .completed-tests {
@@ -316,7 +317,8 @@ nav {
 .profile-info > p {
     margin: 0;
     padding: 0;
-    line-height: 28px;
+    line-height: 2.5rem;
+    font-size: 2.5rem;
     padding-left: 10px;
 }
 
@@ -338,10 +340,17 @@ nav {
 }
 
 .completed-card-btn {
-
+    background-color: var(--navbar-text-dark);
+    color: var(--h1-light);
+    font-size: 2rem !important;
 }
 
-.fix-h {
-    /* height: 60vh;
-    overflow: scroll; */
+
+.completed-card-btn:active {
+    color: var(--h1-dark) !important;
+}
+
+.completed-card-btn:hover {
+    color: var(--h1-dark);
+    background-color: #17C113;
 }

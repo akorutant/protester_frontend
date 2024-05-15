@@ -15,6 +15,7 @@
     --div-outline-dark: #1E1E1E;
 
     --navbar-text-dark: #CCC5B9;
+    --p-text-dark: #97928a;
 
     --search-background: #69696900;
     --search-background-focus: #69696955;
@@ -283,19 +284,64 @@ nav {
 .profile-card {
     background-color: var(--div-outline-dark);
     border-radius: 10px;
+    align-self: flex-start;
+    position: sticky;
 }
 
 .completed-tests {
-    background-color: white;
+    background-color: var(--div-outline-dark);
     border-radius: 10px;
 }
 
 .profile-img {
-    border-radius: 50%;
-    width: 50%;
+    border-radius: var(--border-radius);
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
 }
 
 .profile-info {
-    background-color: var(--div-outline-border);
+    background-color: var(--bg-dark);
     border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+.profile-info > span {
+    font-size: 2rem;
+    color: var(--p-text-dark);
+    line-height: 2rem;
+    padding-left: 10px;
+}
+
+.profile-info > p {
+    margin: 0;
+    padding: 0;
+    line-height: 28px;
+    padding-left: 10px;
+}
+
+.completed-cards {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.completed-cards > div {
+    background-color: var(--bg-dark) !important;
+    width: 20rem;
+}
+
+.card-h5-profile {
+    font-size: 2rem;
+}
+
+.completed-card-btn {
+
+}
+
+.fix-h {
+    /* height: 60vh;
+    overflow: scroll; */
 }
